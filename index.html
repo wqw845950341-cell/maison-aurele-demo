@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f5f0"><meta name="description" content="Maison Aurèle 导购接待助手：一页读懂客户，为下一次相遇做好准备。">
+  <title>Maison Aurèle · 接待前速览</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="voice.css">
+</head>
+<body>
+  <div class="presentation">
+    <header class="brand"><span class="brand-seal">A</span><span>MAISON AURÈLE<small>THE ART OF PERSONAL CARE</small></span></header>
+    <main class="intro">
+      <p class="eyebrow">CLIENTELING · 顾客关系的细节艺术</p>
+      <h1>每一次相遇，<br>都从<span>记得</span>开始。</h1>
+      <p class="intro-copy">让上一次的倾听，成为下一次的默契。<br>一页接待速览，将顾客、承诺与关照放在心上。</p>
+      <div class="intro-rule"></div>
+      <p class="eyebrow select-label">选择演示案例</p>
+      <div class="desktop-cases" id="desktop-cases"></div>
+      <button class="desktop-voice" data-action="tab" data-tab="voice">开始一分钟语音复盘 <span>↗</span></button>
+      <div class="design-caption"><span class="tiny-line"></span>30 秒回顾 · 有来源的记忆 · 有分寸的跟进</div>
+    </main>
+    <footer class="stage-footer"><span>MAISON AURÈLE · 虚构护肤品牌</span><button type="button" data-action="about">关于此演示 ↗</button></footer>
+    <div class="watermark" aria-hidden="true">A</div>
+  </div>
+  <div class="device-area">
+    <div class="device-label"><span></span> 顾问工作台 <i>MINI PROGRAM CONCEPT</i></div>
+    <div class="phone">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><div class="island"></div><span class="status-icons">▮▮▮ <svg width="14" height="12" viewBox="0 0 18 15"><path d="M1 5 Q9 -1 17 5 M4 8 Q9 4 14 8 M7 11 Q9 9 11 11" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="13" r="1"/></svg><span class="battery"></span></span></div>
+      <header class="mini-header"><span class="mini-wordmark">MAISON AURÈLE</span><div class="capsule"><button data-action="about" aria-label="小程序更多信息">•••</button><span></span><button data-action="home" aria-label="返回接待速览">◉</button></div></header>
+      <div class="app-scroll" id="app-scroll"><main id="app"></main></div>
+      <nav id="bottom-nav" aria-label="主导航"></nav>
+      <div class="home-indicator" aria-hidden="true"><span></span></div>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <dialog id="sheet" aria-labelledby="sheet-title"><div class="sheet-head"><span class="sheet-grip"></span><button id="close-sheet" aria-label="关闭弹窗">×</button><p class="eyebrow" id="sheet-eyebrow"></p><h2 id="sheet-title"></h2></div><div id="sheet-content"></div></dialog>
+    </div>
+    <p class="device-note">可交互演示 · 数据来自题目案例 · 更改仅保存在本机</p>
+  </div>
+  <script src="app.js"></script>
+  <script src="voice.js"></script>
+</body>
+</html>
